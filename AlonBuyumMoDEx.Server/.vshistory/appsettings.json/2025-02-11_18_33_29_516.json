@@ -1,0 +1,15 @@
+{
+    "ConnectionStrings": {
+        // for SQL Server
+        //"DefaultConnection": "Server=YourMachineName;Database=ShoppingDb;Trusted_Connection=True;"},
+        // for SQLite
+        "DefaultConnection": "Data Source=Shopping.db"
+    },
+    "Logging": {
+        "LogLevel": {
+            "Default": "Information",
+            "Microsoft.AspNetCore": "Warning"
+        }
+    },
+    "AllowedHosts": "*"
+}
