@@ -1,20 +1,18 @@
-import { useEffect, useState } from 'react';
+import React from 'react';
+import { BrowserRouter , Route, Routes } from 'react-router-dom';
+import {ShoppingList} from './components/ShoppingList';
+import {OrderSummary} from './components/OrderSummary.jsx';
 import './App.css';
 
 function App() {
-    
-
-
-
-
-
-    return (
-        <div>
-            <h1 id="tableLabel">Weather forecast</h1>
-            <p>This component demonstrates fetching data from the server.</p>
-            {contents}
-        </div>
-    );
+	return (
+		<BrowserRouter>
+		  <Routes>
+			<Route path="/" element={<ShoppingList />} />
+			<Route path="/order-summary" element={<OrderSummary />} />
+		  </Routes>
+		</BrowserRouter>
+	  );
 }
 
 export default App;

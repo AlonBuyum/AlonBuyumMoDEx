@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // Fetch data from .NET API
 export const fetchCategories = createAsyncThunk('categories/fetch', async () => {
-  const response = await axios.get('http://localhost:5000/api/products');
+  const response = await axios.get('http://localhost:7088/api/Categories/GetAllCategories');
   return response.data;
 });
 

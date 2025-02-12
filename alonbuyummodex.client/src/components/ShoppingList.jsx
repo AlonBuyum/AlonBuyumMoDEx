@@ -10,6 +10,10 @@ export default function ShoppingList() {
 	dispatch(fetchCategories()); // Fetch data from .NET backend
   }, [dispatch]);
 
+  const handleContinue = () => {
+    navigate('/order-summary');
+  };
+
   return (
 	<div>
 	  <h1>רשימת קניות</h1>
@@ -18,6 +22,7 @@ export default function ShoppingList() {
 		  <li key={item.id}>{item.name}</li>
 		))}
 	  </ul>
-	</div>
+      <button onClick={handleContinue}>המשך להזמנה</button>	
+	  </div>
   );
 }
