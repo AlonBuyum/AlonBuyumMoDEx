@@ -36,7 +36,7 @@ namespace AlonBuyumMoDEx.Server.Controllers
         }
 
         // POST: api/AddCategory
-        [HttpPost, Route("AddCategory")]
+        [HttpPost, Route("AddCategory")] 
         public async  Task<IActionResult> AddCategory([FromBody]Category category)
         {
             if (category == null) return BadRequest("Category is null");
